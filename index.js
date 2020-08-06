@@ -2,6 +2,9 @@ const tareas = ['Practica de Javascript','Ir al supermercado','Pasear al perro',
 
 
 const contenedor = document.getElementById('contenedor');
+const titulo = document.createElement('H1');
+titulo.innerHTML = 'Lista de tareas';
+contenedor.appendChild(titulo);
 const lista = document.createElement('ul');
 contenedor.appendChild(lista);
 for (let i = 0; i < tareas.length; i++) {
